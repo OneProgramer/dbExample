@@ -1,0 +1,196 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ahmed Ali",
+      "department": "IT",
+      "role": "Employee",
+      "monthlySalary": 10000,
+      "annualVacationDays": 21,
+      "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
+    },
+    {
+      "id": 2,
+      "name": "Mona Hassan",
+      "department": "Finance",
+      "role": "Employee",
+      "monthlySalary": 9000,
+      "annualVacationDays": 24,
+      "preferences": { "language": "ar", "theme": "dark", "dateFormat": "DD/MM/YYYY" }
+    },
+    {
+      "id": 3,
+      "name": "Omar Said",
+      "department": "Operations",
+      "role": "Employee",
+      "monthlySalary": 8000,
+      "annualVacationDays": 20,
+      "preferences": { "language": "en", "theme": "light", "dateFormat": "MM-DD-YYYY" }
+    },
+    {
+      "id": 4,
+      "name": "Salma Adel",
+      "department": "Marketing",
+      "role": "Employee",
+      "monthlySalary": 9500,
+      "annualVacationDays": 22,
+      "preferences": { "language": "en", "theme": "dark", "dateFormat": "YYYY/MM/DD" }
+    },
+
+    {
+      "id": 5,
+      "name": "Hassan Youssef",
+      "department": "HR",
+      "role": "HR",
+      "monthlySalary": 12000,
+      "annualVacationDays": 26,
+      "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
+    },
+    {
+      "id": 6,
+      "name": "Khaled Mostafa",
+      "department": "Management",
+      "role": "Manager",
+      "monthlySalary": 15000,
+      "annualVacationDays": 30,
+      "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
+    },
+    {
+      "id": 7,
+      "name": "Mahmoud Tarek",
+      "department": "Security",
+      "role": "Security",
+      "monthlySalary": 7000,
+      "annualVacationDays": 15,
+      "preferences": { "language": "en", "theme": "dark", "dateFormat": "YYYY-MM-DD" }
+    }
+  ],
+
+  "attendanceRecords": [
+    {
+      "id": 1,
+      "employeeId": 1,
+      "date": "2025-08-01",
+      "checkIn": "09:10",
+      "checkOut": "17:00",
+      "status": "Late",
+      "minutesLate": 10,
+      "isWFH": false,
+      "isLeave": false,
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "employeeId": 2,
+      "date": "2025-08-02",
+      "checkIn": "09:00",
+      "checkOut": "17:05",
+      "status": "Present",
+      "minutesLate": 0,
+      "isWFH": true,
+      "isLeave": false,
+      "notes": "Worked from home"
+    },
+    {
+      "id": 3,
+      "employeeId": 3,
+      "date": "2025-08-03",
+      "checkIn": null,
+      "checkOut": null,
+      "status": "Absent",
+      "minutesLate": 0,
+      "isWFH": false,
+      "isLeave": true,
+      "notes": "Annual leave"
+    }
+  ],
+
+  "permissionRequests": [
+    {
+      "id": 1,
+      "employeeId": 1,
+      "type": "Late",
+      "payload": { "requestedDate": "2025-08-01", "minutesExpectedLate": 15, "reason": "Traffic" },
+      "status": "Approved",
+      "managerComment": "Okay",
+      "createdAt": "2025-07-31T10:00:00Z",
+      "decidedAt": "2025-07-31T18:00:00Z"
+    },
+    {
+      "id": 2,
+      "employeeId": 3,
+      "type": "Absence",
+      "payload": { "requestedDate": "2025-08-03", "reason": "Family matter" },
+      "status": "Approved",
+      "managerComment": "Take care",
+      "createdAt": "2025-08-01T09:00:00Z",
+      "decidedAt": "2025-08-01T14:00:00Z"
+    }
+  ],
+
+  "tasks": [
+    {
+      "taskId": 1,
+      "title": "Prepare Monthly Report",
+      "description": "Prepare the monthly finance report.",
+      "priority": "High",
+      "deadline": "2025-08-05T17:00:00Z",
+      "assignees": [2],
+      "status": "Completed",
+      "attachments": [],
+      "comments": [{ "by": "Manager", "text": "Good work", "at": "2025-08-05T18:00:00Z" }],
+      "createdBy": 6,
+      "createdAt": "2025-08-01T10:00:00Z",
+      "updatedAt": "2025-08-05T18:00:00Z",
+      "dependencyTaskIds": []
+    },
+    {
+      "taskId": 2,
+      "title": "Fix Server Issue",
+      "description": "Resolve downtime issue.",
+      "priority": "Critical",
+      "deadline": "2025-08-04T15:00:00Z",
+      "assignees": [1],
+      "status": "Missed",
+      "attachments": [],
+      "comments": [],
+      "createdBy": 6,
+      "createdAt": "2025-08-02T11:00:00Z",
+      "updatedAt": "2025-08-04T16:00:00Z",
+      "dependencyTaskIds": []
+    }
+  ],
+
+  "monthlyPayrollImpacts": [
+    {
+      "employeeId": 1,
+      "month": "2025-08",
+      "latePenalty": 50,
+      "absencePenalty": 0,
+      "taskPenalty": 360,
+      "overtimePay": 0,
+      "bonus": 0,
+      "capApplied": false
+    },
+    {
+      "employeeId": 2,
+      "month": "2025-08",
+      "latePenalty": 0,
+      "absencePenalty": 0,
+      "taskPenalty": 0,
+      "overtimePay": 200,
+      "bonus": 500,
+      "capApplied": false
+    },
+    {
+      "employeeId": 3,
+      "month": "2025-08",
+      "latePenalty": 0,
+      "absencePenalty": 400,
+      "taskPenalty": 0,
+      "overtimePay": 0,
+      "bonus": 0,
+      "capApplied": false
+    }
+  ]
+}
