@@ -1,72 +1,86 @@
 {
   "employees": [
-    {
-      "id": 1,
-      "name": "Ahmed Ali",
-      "department": "IT",
-      "role": "Employee",
-      "monthlySalary": 10000,
-      "annualVacationDays": 21,
-      "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
-    },
-    {
-      "id": 2,
-      "name": "Mona Hassan",
-      "department": "Finance",
-      "role": "Employee",
-      "monthlySalary": 9000,
-      "annualVacationDays": 24,
-      "preferences": { "language": "ar", "theme": "dark", "dateFormat": "DD/MM/YYYY" }
-    },
-    {
-      "id": 3,
-      "name": "Omar Said",
-      "department": "Operations",
-      "role": "Employee",
-      "monthlySalary": 8000,
-      "annualVacationDays": 20,
-      "preferences": { "language": "en", "theme": "light", "dateFormat": "MM-DD-YYYY" }
-    },
-    {
-      "id": 4,
-      "name": "Salma Adel",
-      "department": "Marketing",
-      "role": "Employee",
-      "monthlySalary": 9500,
-      "annualVacationDays": 22,
-      "preferences": { "language": "en", "theme": "dark", "dateFormat": "YYYY/MM/DD" }
-    },
+  {
+    "id": 1,
+    "name": "Ahmed Ali",
+    "username": "ahmed.ali",
+    "password": "aH12dE45",
+    "department": "IT",
+    "role": "Employee",
+    "monthlySalary": 10000,
+    "annualVacationDays": 21,
+    "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
+  },
+  {
+    "id": 2,
+    "name": "Mona Hassan",
+    "username": "mona.hassan",
+    "password": "Mo34nA78",
+    "department": "Finance",
+    "role": "Employee",
+    "monthlySalary": 9000,
+    "annualVacationDays": 24,
+    "preferences": { "language": "ar", "theme": "dark", "dateFormat": "DD/MM/YYYY" }
+  },
+  {
+    "id": 3,
+    "name": "Omar Said",
+    "username": "omar.said",
+    "password": "Om56aR90",
+    "department": "Operations",
+    "role": "Employee",
+    "monthlySalary": 8000,
+    "annualVacationDays": 20,
+    "preferences": { "language": "en", "theme": "light", "dateFormat": "MM-DD-YYYY" }
+  },
+  {
+    "id": 4,
+    "name": "Salma Adel",
+    "username": "salma.adel",
+    "password": "Sa12Lm34",
+    "department": "Marketing",
+    "role": "Employee",
+    "monthlySalary": 9500,
+    "annualVacationDays": 22,
+    "preferences": { "language": "en", "theme": "dark", "dateFormat": "YYYY/MM/DD" }
+  },
+  {
+    "id": 5,
+    "name": "Hassan Youssef",
+    "username": "hassan.youssef",
+    "password": "Ha98sY12",
+    "department": "HR",
+    "role": "HR",
+    "monthlySalary": 12000,
+    "annualVacationDays": 26,
+    "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
+  },
+  {
+    "id": 6,
+    "name": "Khaled Mostafa",
+    "username": "khaled.mostafa",
+    "password": "Kh56mO78",
+    "department": "Management",
+    "role": "Manager",
+    "monthlySalary": 15000,
+    "annualVacationDays": 30,
+    "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
+  },
+  {
+    "id": 7,
+    "name": "Mahmoud Tarek",
+    "username": "mahmoud.tarek",
+    "password": "Ma34tA67",
+    "department": "Security",
+    "role": "Security",
+    "monthlySalary": 7000,
+    "annualVacationDays": 15,
+    "preferences": { "language": "en", "theme": "dark", "dateFormat": "YYYY-MM-DD" }
+  }
+]
+,
 
-    {
-      "id": 5,
-      "name": "Hassan Youssef",
-      "department": "HR",
-      "role": "HR",
-      "monthlySalary": 12000,
-      "annualVacationDays": 26,
-      "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
-    },
-    {
-      "id": 6,
-      "name": "Khaled Mostafa",
-      "department": "Management",
-      "role": "Manager",
-      "monthlySalary": 15000,
-      "annualVacationDays": 30,
-      "preferences": { "language": "en", "theme": "light", "dateFormat": "YYYY-MM-DD" }
-    },
-    {
-      "id": 7,
-      "name": "Mahmoud Tarek",
-      "department": "Security",
-      "role": "Security",
-      "monthlySalary": 7000,
-      "annualVacationDays": 15,
-      "preferences": { "language": "en", "theme": "dark", "dateFormat": "YYYY-MM-DD" }
-    }
-  ],
-
-  "attendanceRecords": [
+  "attendanceRecords": [ 
     {
       "id": 1,
       "employeeId": 1,
@@ -105,7 +119,7 @@
     }
   ],
 
-  "permissionRequests": [
+  "permissionRequests": [ 
     {
       "id": 1,
       "employeeId": 1,
